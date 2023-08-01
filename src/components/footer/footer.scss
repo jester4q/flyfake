@@ -1,0 +1,22 @@
+.footer {
+    margin-top: auto;
+    background: rgb(250, 250, 251);
+    > div {
+        padding: 48px 0px 0px;
+        background: rgb(44, 57, 89);
+        color: rgb(255, 255, 255);
+        > div {
+            border-top: none;
+            flex-flow: row wrap;
+            width: 100%;
+            max-width: 1280px;
+            padding: 0px 24px;
+            width: 1176px;
+            margin: 0px auto;
+            display: flex;
+            -webkit-box-pack: justify;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+    }
+}

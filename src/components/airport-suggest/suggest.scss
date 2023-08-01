@@ -1,0 +1,271 @@
+.airportsuggest {
+    position: relative;
+    //margin-right: 2px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+
+.airportsuggest__list {
+    min-width: 400px;
+    margin-top: 0;
+    top: 100%;
+    margin: 3px 0 0;
+    padding: 3x 0;
+    position: absolute;
+    box-shadow: rgba(33, 33, 38, 0.1) 0px 8px 40px;
+    border-radius: 8px;
+    max-height: 360px;
+    overflow: hidden auto;
+    z-index: 10;
+    background: #fff;
+
+    .no-suggestions {
+        color: #999;
+        padding: 0.5rem;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        list-style: none;
+    }
+
+    li {
+        cursor: pointer;
+
+        &.selected {
+            background-color: rgb(247, 247, 248);
+        }
+    }
+}
+
+.airportsuggest__listblock {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: stretch;
+    font: 400 16px / 20px;
+    color: #212126;
+    white-space: nowrap;
+    box-sizing: border-box;
+    padding: 8px 12px 8px 42px;
+}
+
+.airportsuggest__listblock_city {
+    padding: 8px 12px 8px 16px;
+}
+
+.airportsuggest__icon {
+    align-self: start;
+    padding: 3px 8px 3px 0;
+}
+
+.airportsuggest__icon-wrapper {
+    display: inline-flex;
+    > svg {
+        fill: rgb(157, 160, 174);
+        transition: 0.15s ease-out;
+        transition-property: fill, transform;
+        height: 18px;
+        width: 18px;
+        opacity: 1;
+    }
+}
+
+.airportsuggest__mark {
+    position: absolute;
+    right: 0;
+}
+
+.airportsuggest__location {
+    flex-grow: 1;
+    flex-shrink: 1;
+    display: inline-block;
+    justify-content: flex-start;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.airportsuggest__location-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    > span.text {
+        max-width: calc(100% - 85px);
+        text-overflow: ellipsis;
+        overflow: hidden;
+        color: rgb(44, 57, 89);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        text-decoration: none;
+        text-decoration-skip-ink: none;
+        margin: 0px;
+    }
+}
+
+.airportsuggest__location-iata {
+    text-align: left;
+    width: 75px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    > span.text {
+        align-self: center;
+        flex-grow: 0;
+        flex-shrink: 0;
+        padding-right: 23px;
+        text-align: right;
+        width: 100%;
+        color: #9da0ae;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        text-decoration: none;
+        text-decoration-skip-ink: none;
+        margin: 0;
+    }
+}
+
+.airportsuggest__location-sub {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: initial;
+    max-height: 36px;
+    display: -webkit-box;
+    color: #62657f;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    text-decoration: none;
+    text-decoration-skip-ink: none;
+    margin: 0;
+}
+
+.airportsuggestinput {
+}
+
+.airportsuggestinput__container {
+    background: #ffffff;
+    position: relative;
+    width: 100%;
+    height: 64px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    line-height: 1;
+    box-shadow: inset 0 0 0 1px #d0d1d7;
+    border-radius: 8px;
+    transition: 0.15s ease-out;
+    transition-property: border-color;
+}
+
+.airportsuggestinput__inner-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 16px;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    &:hover,
+    &.focused {
+        box-shadow: inset 0 0 0 2px #32a95e;
+    }
+}
+
+.airportsuggestinput__placeholder {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.airportsuggestinput__placeholder__text {
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    color: rgb(121, 124, 154);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    transition-property: transform, font-size, line-height;
+    transition-duration: 300ms;
+    transition-timing-function: ease-in-out;
+    &.focused {
+        position: absolute;
+        top: 10px;
+        left: 0;
+        color: #797c9a;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        transition-property: transform, font-size, line-height;
+        transition-duration: 300ms;
+        transition-timing-function: ease-in-out;
+        transform: translateY(-10px);
+    }
+}
+
+.airportsuggestinput__content {
+    flex-wrap: nowrap;
+    width: 100%;
+    padding-top: 20px;
+    display: flex;
+    > input {
+        appearance: none;
+        position: relative;
+        flex-grow: 1;
+        flex-shrink: 1;
+        width: 70%;
+        height: 24px;
+        border: none;
+        font-family: inherit;
+        opacity: 1;
+        padding: 0px;
+        background-color: transparent;
+        align-items: flex-end;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: rgb(44, 57, 89);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        &.focused {
+            outline: none;
+        }
+        &:focus {
+            outline-style: none;
+        }
+    }
+
+    > div {
+        display: block;
+        text-align: end;
+        padding-right: 2px;
+        width: 25%;
+        visibility: hidden;
+        color: rgb(121, 124, 154);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        text-decoration: none;
+        text-decoration-skip-ink: none;
+        margin: 0px;
+    }
+}

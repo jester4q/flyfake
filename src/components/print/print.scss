@@ -1,0 +1,288 @@
+.print {
+    flex-direction: column;
+    background-color: #f5f5f7;
+}
+
+.print__heading {
+    margin-bottom: 24px;
+}
+.print__details {
+    > .print__warp {
+        > div {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+    }
+}
+
+.print__warp {
+    max-width: 1280px;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 24px;
+}
+
+.ticket-paper {
+    font-family: 'DejaVuSans';
+    width: 21cm;
+    height: 29.7cm;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: (33, 33, 38, 0.1) 0px 8px 40px;
+
+    padding: 14pt 18.7pt 14pt 18.7pt;
+}
+
+.ticket-paper__logo {
+    height: 38.2pt;
+    img {
+        width: 113.8pt;
+        height: 38.2pt;
+        margin-left: 6pt;
+    }
+}
+
+.ticket-paper__header {
+    font-size: 14pt;
+    font-weight: normal;
+    text-align: center;
+    margin-top: 13.8pt;
+}
+
+.ticket-paper__booking {
+    margin: 8pt 3pt 9.4pt;
+    table {
+        table-layout: fixed;
+        width: 100%;
+
+        tr td {
+            font-size: 8pt;
+            line-height: 1.4em;
+            white-space: nowrap;
+            margin: 0;
+            font-family: 'DejaVuSansBold';
+        }
+    }
+}
+
+.ticket-paper__line {
+    height: 0.5pt;
+    width: 100%;
+    background-color: #999;
+}
+
+.ticket-paper__passengers {
+    margin-top: 8.5pt;
+    border: 1px solid #ced4d9;
+    border-radius: 3pt;
+    > div {
+        height: 17.1pt;
+        background-color: #dee5eb;
+        text-align: center;
+        border-bottom: #ced4d9;
+        font-size: 8pt;
+        font-family: 'DejaVuSansBold';
+        line-height: 17.1pt;
+        position: relative;
+        border-bottom: 1px solid #ced4d9;
+        img {
+            width: 6pt;
+            height: 13pt;
+            position: absolute;
+            left: 5.8pt;
+            top: 2pt;
+        }
+    }
+    table {
+        table-layout: fixed;
+        width: 100%;
+        margin: 1pt 8.5pt;
+
+        tr td {
+            font-size: 8pt;
+            line-height: 1.4em;
+            white-space: nowrap;
+            margin: 0;
+            font-family: 'DejaVuSans';
+        }
+        tr th {
+            font-size: 8pt;
+            line-height: 1.4em;
+            white-space: nowrap;
+            margin: 0;
+            font-family: 'DejaVuSansBold';
+            text-align: left;
+        }
+    }
+}
+
+.ticket-paper__flight {
+    margin-top: 8.5pt;
+    border: 1px solid #ced4d9;
+    border-radius: 3pt;
+
+    > div {
+        height: 17.1pt;
+        background-color: #dee5eb;
+        text-align: center;
+        border-bottom: #ced4d9;
+        font-size: 8pt;
+        font-family: 'DejaVuSansBold';
+        line-height: 17.1pt;
+        position: relative;
+        border-bottom: 1px solid #ced4d9;
+        img {
+            width: 14.6pt;
+            height: 9.4pt;
+            position: absolute;
+            left: 5.8pt;
+            top: 4pt;
+        }
+    }
+    table {
+        table-layout: fixed;
+        width: 100%;
+        margin: 1pt 8.5pt;
+        > tbody > tr > td {
+            &:first-child {
+                width: 103pt;
+            }
+            font-size: 7pt;
+            line-height: 1.4em;
+            white-space: nowrap;
+            margin: 0;
+            font-family: 'DejaVuSans';
+            strong {
+                font-family: 'DejaVuSansBold';
+            }
+
+            > table {
+                margin: 0;
+            }
+        }
+        > tbody > tr > th {
+            &:first-child {
+                width: 103pt;
+            }
+            font-size: 8pt;
+            line-height: 1.4em;
+            white-space: nowrap;
+            margin: 0;
+            font-family: 'DejaVuSansBold';
+            text-align: left;
+        }
+    }
+}
+
+.ticket-paper__payment {
+    margin-top: 8.5pt;
+    border: 1px solid #ced4d9;
+    border-radius: 3pt;
+    > div {
+        height: 17.1pt;
+        background-color: #dee5eb;
+        text-align: center;
+        border-bottom: #ced4d9;
+        font-size: 8pt;
+        font-family: 'DejaVuSansBold';
+        line-height: 17.1pt;
+        position: relative;
+        border-bottom: 1px solid #ced4d9;
+        img {
+            width: 10.7pt;
+            height: 12.1pt;
+            position: absolute;
+            left: 5.8pt;
+            top: 2.8pt;
+        }
+    }
+    table {
+        table-layout: fixed;
+        width: 100%;
+        margin: 1pt 8.5pt;
+
+        tr td {
+            line-height: 1.4em;
+            white-space: nowrap;
+            margin: 0;
+            font-family: 'DejaVuSans';
+            font-size: 9pt;
+        }
+        tr th {
+            font-size: 8pt;
+            line-height: 1.4em;
+            white-space: nowrap;
+            margin: 0;
+            font-family: 'DejaVuSansBold';
+            text-align: left;
+        }
+    }
+}
+
+.ticket-paper__warning {
+    margin-top: 5.8pt;
+    > div {
+        height: 17.2pt;
+        background-color: #fae49a;
+        text-align: center;
+        font-size: 8pt;
+        font-family: 'DejaVuSansBold';
+        line-height: 17.1pt;
+        position: relative;
+        border-radius: 3pt;
+        img {
+            width: 11.5pt;
+            height: 10.9pt;
+            position: absolute;
+            left: 5.8pt;
+            top: 2.8pt;
+        }
+    }
+    table {
+        table-layout: fixed;
+        width: 100%;
+        margin-top: 4pt;
+
+        tr td {
+            line-height: 1.4em;
+            margin: 0;
+            font-family: 'DejaVuSans';
+            font-size: 6pt;
+        }
+    }
+
+    ul li {
+        line-height: 1.6em;
+        margin-left: 8pt;
+        margin-right: 4pt;
+        list-style: circle;
+    }
+}
+
+.ticket-paper__departing {
+    tr td:first-child {
+        width: 50pt;
+    }
+}
+
+.ticket-paper__transfer {
+    padding: 2.5pt 0;
+}
+
+.print__ctrls {
+    background-color: #ffffff;
+    box-shadow: 0px 4px 10px rgba(98, 112, 139, 0.1);
+    border-radius: 8px;
+    margin: 24px 0;
+    padding: 32px;
+    > div {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        gap: 24px;
+    }
+}

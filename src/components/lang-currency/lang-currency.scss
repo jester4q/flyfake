@@ -1,0 +1,20 @@
+.lang-currency {
+    display: flex;
+    align-items: center;
+    > span {
+        display: inline-flex;
+        align-items: center;
+        padding: 8px 16px;
+        border-radius: 8px;
+        color: #2c3959;
+        background-color: #edeef3;
+        transition: color 0.15s ease-out 0s;
+        cursor: pointer;
+        text-decoration: none;
+        text-decoration-skip-ink: none;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        margin: 0px;
+    }
+}

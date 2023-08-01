@@ -1,0 +1,47 @@
+$color: #ffffff;
+$stealth: #6b6b6b;
+
+.link {
+    cursor: pointer;
+    position: relative;
+    line-height: 25px;
+    text-decoration: none;
+    color: $color;
+    &:visited {
+        color: $color;
+    }
+    &:hover {
+        &:after {
+            left: auto;
+            right: 0;
+            width: 0;
+        }
+    }
+    &:after {
+        content: '';
+        position: absolute;
+        transition: all 0.3s ease;
+        margin: auto {
+            bottom: -5px;
+        }
+        height: 2px;
+        background: $color;
+        opacity: 1;
+        top: auto;
+        bottom: 0;
+        left: 0;
+        right: auto;
+        width: 100%;
+    }
+}
+
+.link_light {
+    color: $stealth;
+    cursor: pointer;
+    position: relative;
+    line-height: 25px;
+    text-decoration: none;
+    &:visited {
+        color: $stealth;
+    }
+}

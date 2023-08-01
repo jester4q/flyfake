@@ -1,0 +1,222 @@
+.date-dropdown {
+    position: absolute;
+    min-width: 400px;
+    top: 100%;
+    left: 0%;
+    border-radius: 8px;
+    background-color: #ffffff;
+    width: 674px;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0px 8px 40px rgba(33, 33, 38, 0.1);
+    z-index: 4;
+    > div {
+        padding: 10px 0;
+    }
+}
+
+.date-dropdown__header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 6px;
+    > h1 {
+        padding: 0 1em;
+        color: inherit;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 28px;
+        text-decoration: none;
+        text-decoration-skip-ink: none;
+        margin: 0;
+    }
+}
+
+.date-dropdown__daypicker {
+    overflow: hidden;
+    max-height: 100%;
+    position: relative;
+    background: #ffffff;
+    position: relative;
+    flex-direction: row;
+    padding-bottom: 1em;
+    user-select: none;
+}
+
+.date-dropdown__navbar {
+    padding: 0.5em 1em 0;
+    position: relative;
+    outline: none;
+}
+
+.rdp-multiple_months {
+    .rdp-nav {
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        bottom: -4.5em;
+        // left: 0;
+        //width: 100%;
+        // padding: 0 1em;
+        z-index: 2;
+        outline: none;
+
+        > button {
+            outline: none;
+            font-family: inherit;
+            border: none;
+            margin: 0;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 16px;
+            transform: translateZ(0);
+            border-radius: 8px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            padding-right: 8px;
+            padding-left: 8px;
+            color: #2c3959;
+            background-color: #edeef3;
+            width: auto;
+            height: auto;
+            svg {
+                fill: #2c3959;
+                outline: none;
+                height: 16px;
+                width: 16px;
+                opacity: 1;
+                transition: fill 0.15s ease-out 0s, transform;
+            }
+
+            &:hover:not([disabled]):not(.rdp-day_selected) {
+                cursor: pointer;
+                background-color: #e6e8ef;
+                color: #2c3959;
+            }
+
+            &:disabled {
+                color: #9a9eb1;
+                background: #edeef3;
+                svg {
+                    fill: #9a9eb1;
+                }
+            }
+        }
+    }
+
+    .rdp-caption_label {
+        font-size: 1.15em;
+        font-weight: 500;
+    }
+    .rdp-head_cell {
+        padding: 0.5em;
+        color: #8b9898;
+        text-align: center;
+        font-size: 0.875em;
+        font-weight: 500;
+    }
+
+    .rdp-button:hover:not([disabled]):not(.rdp-day_selected) {
+        background-color: #e6e8ef;
+    }
+
+    .rdp-day_selected,
+    .rdp-day_selected:focus-visible,
+    .rdp-day_selected:hover {
+        background-color: #edeef3;
+        color: #2c3959;
+    }
+}
+
+.date-dropdown__buttons {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    bottom: -4.5em;
+    left: 0;
+    width: 100%;
+    padding: 0 1em;
+    z-index: 2;
+    outline: none;
+
+    > button {
+        outline: none;
+        font-family: inherit;
+        border: none;
+        padding: 0;
+        margin: 0;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        color: #9a9eb1;
+        background: #edeef3;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 16px;
+        transform: translateZ(0);
+        border-radius: 8px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-right: 8px;
+        padding-left: 8px;
+        color: #2c3959;
+        background: #edeef3;
+
+        > span {
+            outline: none;
+            display: inline-flex;
+            vertical-align: middle;
+            justify-content: center;
+            align-items: center;
+            > span {
+                outline: none;
+                display: inline-flex;
+            }
+        }
+
+        svg {
+            fill: #2c3959;
+            outline: none;
+            height: 16px;
+            width: 16px;
+            opacity: 1;
+            transition: fill 0.15s ease-out 0s, transform;
+        }
+
+        &:disabled {
+            color: #9a9eb1;
+            background: #edeef3;
+            svg {
+                fill: #9a9eb1;
+            }
+        }
+    }
+}
+
+.date-dropdown__reset {
+    padding: 0 1em;
+    > button {
+        font-weight: 500;
+
+        font-family: inherit;
+        border: none;
+        outline: none;
+        margin: 0;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        color: #ffffff;
+        background: #37b866;
+        font-size: 14px;
+        line-height: 16px;
+        transform: translateZ(0);
+        border-radius: 8px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-right: 16px;
+        padding-left: 16px;
+    }
+}

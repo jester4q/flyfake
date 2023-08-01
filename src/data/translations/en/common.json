@@ -1,0 +1,137 @@
+{
+    "menu": {
+        "signup": "Login and signup"
+    },
+
+    "language": {
+        "english": "English",
+        "russian": "Russian"
+    },
+
+    "currency": {
+        "dollar": "US Dollar",
+        "ruble": "Russian Ruble"
+    },
+
+    "month": {
+        "jan": "January",
+        "feb": "February",
+        "mar": "March",
+        "apr": "April",
+        "may": "May",
+        "jun": "June",
+        "jul": "July",
+        "aug": "August",
+        "sep": "September",
+        "oct": "October",
+        "nov": "November",
+        "dec": "December"
+    },
+
+    "date": {
+        "day": "Day",
+        "month": "Month",
+        "year": "Year"
+    },
+
+    "gender": {
+        "male": "Male",
+        "female": "Female"
+    },
+
+    "form": {
+        "apply": "Apply",
+        "cancel": "Cancel"
+    },
+
+    "search": {
+        "from": "From",
+        "to": "To",
+        "submit": "Search",
+        "outbound": "Outbound",
+        "return": "Return",
+        "departure_date": "Departure date",
+        "return_date": "Return date",
+        "return_not_need": "No return ticket needed",
+        "passengers_and_class": "Passengers and Class",
+        "pax": "pax",
+        "business": "business",
+        "business_class": "Business class",
+        "economy": "economy",
+        "passenger": "passenger",
+        "adults": "Adults",
+        "adults_desc": "12 and older",
+        "children": "Сhildren",
+        "children_desc": "age 2 through 12",
+        "infants": "Infants",
+        "infants_desc": "younger than 2, no seat"
+    },
+    "noresults": {
+        "title": "No flight options found",
+        "text": "Try searching nearby airports or changing your departure/arrival dates"
+    },
+    "documenttype": {
+        "passport_rf": "Russian internal passport",
+        "passport_itn": "Russian international passport",
+        "birth_certificate": "Birth certificate",
+        "passport_or_id": "Passport or ID number"
+    },
+    "ticket": {
+        "desc": "Local departure and arrival time",
+        "hide_details": "Hide details",
+        "show_details": "Journey details",
+        "for_all": "for all passengers",
+        "book": "book",
+        "cheapest": "cheapest",
+        "stop": "stop",
+        "stops": "stops",
+        "direct": "Direct",
+        "transfer_in": "Transfer in",
+        "d": "d",
+        "h": "h",
+        "m": "m",
+        "show_more": "Show more {{pagesize}} tickets"
+    },
+    "booking": {
+        "back_to_search": "Tickets",
+        "step1": "Trip Summary",
+        "step2": "Pay",
+        "step3": "Print",
+        "title": "Trip Summary",
+        "adult_other": "{{count}} adults",
+        "adult_one": "{{count}} adult",
+        "child_other": "{{count}} children",
+        "child_one": "{{count}} child",
+        "infant_other": "{{count}} infants",
+        "infant_one": "{{count}} infant",
+        "details_title": "Journey details",
+        "details_note": "Departure and arrival times are shown in local time",
+        "passenger_title": "Enter passenger details",
+        "passenger_adult": "Passenger {{no}} (aged 12+)",
+        "passenger_child": "Passenger {{no}} (age 2 through 12)",
+        "passenger_infant": "Passenger {{no}} (younger than 2)",
+        "book_ticket": "Book the ticket",
+        "reserve_ticket": "Reserve the ticket",
+        "price": "Price",
+        "continue": "Continue",
+        "nationality": "Nationality",
+        "document_type": "Type of document",
+        "document_number": "Document No",
+        "document_seria_and_no": "Series and No of passport",
+        "birth_certificate_seria_and_no": "Seriess and No of Birth certificate",
+        "seria_and_no": "Series and No",
+        "valid_until": "Valid until",
+        "firstname": "Fist name",
+        "lastname": "Surname",
+        "middlename": "Middle name",
+        "firstname_ph": "Ivan",
+        "lastname_ph": "Ivanov",
+        "middlename_ph": "Ivanovich",
+        "dob": "Date of birth",
+        "gender": "Gender",
+        "mile_card": "Mile card"
+    },
+    "print": {
+        "download": "Download pdf"
+    }
+}

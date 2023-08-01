@@ -1,0 +1,104 @@
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+}
+
+.radio-group__item {
+    border-radius: 12px;
+    padding: 16px 20px;
+    border: 1px solid #e8e9ed;
+    background: #ffffff;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    input {
+        display: none;
+    }
+    &:hover,
+    &.active {
+        border: 1px solid #32a95e;
+    }
+}
+
+.radio-group__rightpart {
+    white-space: nowrap;
+    margin-left: 20px;
+    color: inherit;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-decoration: none;
+    text-decoration-skip-ink: none;
+    margin: 0;
+}
+
+.radio-group__leftpart {
+    display: flex;
+    align-items: center;
+
+    > label {
+        cursor: pointer;
+        display: inline-flex;
+        align-items: center;
+        position: relative;
+        user-select: none;
+        width: 100%;
+        gap: 8px;
+        color: #62657f;
+    }
+
+    > span {
+        margin-left: 14px;
+        white-space: nowrap;
+        color: inherit;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        text-decoration: none;
+        text-decoration-skip-ink: none;
+    }
+}
+
+.radio-group__button {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    user-select: none;
+    border: 1px solid #d0d1d7;
+    transition: 0.15s ease-out;
+    transition-property: background, border;
+    background: #ffffff;
+    &:after {
+        content: '';
+        width: 8px;
+        height: 8px;
+        background: #ffffff;
+        display: inline-flex;
+        border-radius: 50%;
+        opacity: 0;
+    }
+}
+
+.radio-group__item.active {
+    .radio-group__button {
+        border: 1px solid rgba(0, 0, 0, 0);
+        transition: 0.15s ease-out;
+        transition-property: background, border;
+        background: #37b866;
+        &::after {
+            content: '';
+            width: 8px;
+            height: 8px;
+            background: #ffffff;
+            display: inline-flex;
+            border-radius: 50%;
+            opacity: 1;
+        }
+    }
+}

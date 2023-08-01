@@ -1,0 +1,26 @@
+.date {
+}
+.date__label {
+    display: block;
+    margin-bottom: 4px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #62657f;
+    user-select: none;
+}
+.date__container {
+    display: flex;
+}
+
+.date__input {
+    max-width: 100%;
+    flex-grow: 1;
+    flex-shrink: 0;
+    width: 78px;
+}
+
+.date__month {
+    flex-grow: 1;
+    margin-left: 8px;
+    margin-right: 8px;
+}

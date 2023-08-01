@@ -1,0 +1,206 @@
+.homepage {
+    .loading {
+        margin-top: -4px;
+    }
+}
+
+.homepage__search {
+    padding-bottom: 42px;
+    box-sizing: border-box;
+    backface-visibility: hidden;
+    background-color: #f5f5f7;
+}
+
+.homepage__filter {
+    position: relative;
+    padding-top: 24px;
+    background-color: #ffffff;
+    z-index: 4;
+}
+
+.homepage__options {
+    background: white;
+    width: 100%;
+    border-bottom: 1px solid #f5f5f7;
+    position: relative;
+    height: 24px;
+}
+
+.homepage__filter__container {
+    width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 24px;
+}
+
+.homepage__filter__form {
+    pointer-events: auto;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0px auto;
+    display: flex;
+    vertical-align: baseline;
+}
+
+.homepage__airport-select-group {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: auto;
+    flex: 1 1 37%;
+    max-width: 448px;
+    > div {
+        margin-right: 2px;
+    }
+}
+
+.homepage__swap-button {
+    position: relative;
+    cursor: pointer;
+    > div {
+        opacity: 1;
+        transition: 0.15s ease-out;
+        background-color: rgb(247, 247, 248);
+        width: 32px;
+        height: 32px;
+        border-radius: 8px;
+        position: absolute;
+        top: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: translateY(-50%);
+        left: -17px;
+        z-index: 3;
+        box-shadow: rgba(33, 33, 38, 0.1) 0px 8px 40px;
+        > span {
+            display: inline-flex;
+            > svg {
+                height: 16px;
+                width: 16px;
+                fill: rgb(55, 184, 102);
+                opacity: 1;
+                transition: fill 0.15s ease-out 0s, transform;
+            }
+        }
+    }
+}
+
+.homepage__other-group {
+    display: flex;
+    width: 64%;
+}
+
+.homepage__passengers-group {
+    width: 29%;
+    margin-right: 8px;
+}
+
+.homepage__search-button {
+    font-family: inherit;
+    border: none;
+    outline: none;
+    padding: 0;
+    margin: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    background: #37b866;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    transform: translateZ(0);
+    border-radius: 12px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-right: 16px;
+    padding-left: 16px;
+    width: 100%;
+    flex: 1 1 28%;
+    max-height: 64px;
+    max-width: 208px;
+    &.disabled {
+        color: rgb(154, 158, 177);
+        background: rgb(237, 238, 243);
+    }
+    &:hover {
+        cursor: pointer;
+        background: #32a95e;
+        color: #ffffff;
+    }
+    > span {
+        display: inline-block;
+        vertical-align: top;
+        text-decoration-skip-ink: none;
+    }
+}
+
+.homepage__date-group {
+    position: relative;
+    display: flex;
+    flex: 1 1 46%;
+    max-width: 348px;
+}
+
+.homepage__list {
+    width: auto;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding-left: 16px;
+    padding-right: 16px;
+    /*
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    */
+}
+
+@media screen and (min-width: 1280px) {
+    .homepage__list {
+        padding-top: 24px;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}
+
+.homepage__ticket {
+    width: 100%;
+}
+
+.homepage__show-more {
+    display: flex;
+    justify-content: center;
+    padding-top: 24px;
+
+    button {
+        font-family: inherit;
+        border: none;
+        outline: none;
+        padding: 0;
+        margin: 0;
+        display: -webkit-inline-box;
+        display: -webkit-inline-flex;
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        color: #ffffff;
+        background: #37b866;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        transform: translateZ(0);
+        border-radius: 8px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-right: 16px;
+        padding-left: 16px;
+
+        > span {
+            display: inline-block;
+            vertical-align: top;
+            text-decoration-skip-ink: none;
+        }
+    }
+}
